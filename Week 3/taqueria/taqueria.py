@@ -15,7 +15,6 @@ price = 0
 while True:
     try:
         item = input("Item: ").title().strip()
-        # No need to check if item in foods. KeyError is handled separately.
         price = price + foods[item]
         print(f"Total: ${price:.2f}")
     except EOFError:
